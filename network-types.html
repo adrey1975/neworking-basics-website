@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Types</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fp-style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">Networking Basics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="network-types.html">Network Types</a></li>
+                <li class="nav-item"><a class="nav-link" href="devices.html">Devices</a></li>
+                <li class="nav-item"><a class="nav-link" href="protocols.html">Protocols</a></li>
+                <li class="nav-item"><a class="nav-link" href="troubleshooting.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <section class="container mt-5">
+        <h2 class="text-center">Types of Networks</h2>
+        <hr class="my-4">
+        <p class="lead" style="text-align: center;">Let's take a look some of the different type of networks that exist and that you should familiarize yourself with.</p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">LAN (Local Area Network)</h5>
+                        <p class="card-text">A network covering a small geographic area, like a home or office.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">WAN (Wide Area Network)</h5>
+                        <p class="card-text">A network that extends over large distances, connecting multiple LANs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">PAN (Personal Area Network)</h5>
+                        <p class="card-text">This could be as small as a Bluetooth connection between your phone and your earbuds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">MAN (Metropolitan Area Network)</h5>
+                        <p class="card-text">Think of it like a network that could connect all the public libraries in a city.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--IMAGES-->
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3 class="img-label">LAN Party</h3>
+                <figure>
+                    <div class="card mb-3">
+                        <img src="media_files/lan-party.jpg" class="card-img-top" alt="A lan Party">
+                    </div>
+                    <figcaption>
+                        "Redland's Lan Party" by lofaesofa is licensed under CC BY 2.0.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <h3 class="img-label">Network Switch</h3>
+                <figure>
+                    <div class="card mb-3">
+                        <img src="media_files/network_2.jpg" class="card-img-top" alt="A Network Switch">
+                    </div>
+                    <figcaption>
+                        "Networking Switch" by @felixtriller is licensed under CC BY 2.0.
+                    </figcaption>
+                </figure>
+    </section>
+    </section>
+    <!--Quiz Question-->
+    <section class="container mt-5">
+        <h2 class="text-center">Check for learning</h2>
+        <div class="row mt-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 offset 1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="question">
+                            <h5 class="card-title">Without scrolling up, what does LAN do?</h5>
+                            <div class="options" data-answer="3">
+                                <label><input type="radio" name="question1" value="1"> Connect your phone to your earbuds </label><br>
+                                <label><input type="radio" name="question1" value="2"> Connects mulitple LAN's </label><br>
+                                <label><input type="radio" name="question1" value="3"> Cover a small geographic area, like a home or office </label><br>
+                                <label><input type="radio" name="question1" value="4"> Connects all the public libraries in a City </label><br>
+    
+                                <!-- Submit Button -->
+                                <div class="submitContainer">
+                                    <button class="submit" >Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result-->
+                        <div class="result" style="display:none;">
+                            <h5>Your Score:</h5>
+                            <p class="score"></p>
+                            <p class="assessment"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="next" id="next" style="display: none;">
+            <a href="devices.html" class="btn btn-primary btn-lg">Next</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3">
+        <p>© 2024 Networking Basics</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="network-basics.js"></script> 
+</body>
+</html>

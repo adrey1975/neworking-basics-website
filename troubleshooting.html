@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fp-style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html">Networking Basics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="network-types.html">Network Types</a></li>
+                <li class="nav-item"><a class="nav-link" href="devices.html">Devices</a></li>
+                <li class="nav-item"><a class="nav-link" href="protocols.html">Protocols</a></li>
+                <li class="nav-item"><a class="nav-link" href="troubleshooting.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <section class="container mt-5">
+        <h2 class="text-center">Troubleshooting Basics</h2>
+        <hr class="my-4">
+        <p class="lead" style="text-align: center;">In this section we'll look at simple methods for identifying and solving network issues</p> <br> <br>
+
+        <!--Common Networking Problems subsection-->
+        <h2 class="text-center">Common Networking Problems</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">No Wi-Fi Connection</h5>
+                        <p class="card-text"> One of the most common issues you'll come accross while trying to access the internet is not being able to actually connect to the internet. More often than not this is a hardware issue that can be resolved by checking your router and ensuring devices are connected. Restarting your router may also help! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Slow Internet</h5>
+                        <p class="card-text">This can be an indicator that there are too many devices on one network trying to access the internet. Think about when you are waiting for a package to arrive at your house but so is everyone else in your family. That package will get there eventually, but it might take the delivery service some time to organize the delivery. It's the same with data on the internet, and some times there is what's called "packet loss" and the data never reaches you. This is just like when your package gets lost in real life and doesn't get delivered.</p>
+                    </div>
+                </div>
+            </div> 
+        </div> <br> <br>
+
+        <!--Troubleshooting subsection-->
+        <h2 class="text-center">Troubleshooting</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Using a Ping Test</h5>
+                        <p class="card-text"> Pinging is like calling someone's name to see if they answer. A ping test tells you if another device is responding. Check out the following article for a simple step-by-step guide on how to perform a ping test. </p>
+                        <a href="https://www.pagerduty.com/resources/learn/ping-network-testing-connectivity/">Ping Test Guide</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Restarting Devices</h5>
+                        <p class="card-text">If things aren’t working, try turning off your router and turning it back on—like a reset button. With the knowledge you've learned throughout this course you'll be able to troubleshoot your home network using the following guide.</p>
+                        <p>
+                            <a href="https://www.wikihow.com/Reset-Your-Home-Network">How to Reset Your Home Network</a>
+                        </p>
+                    </div>
+                </div>
+            </div> <br> <br>
+        </div>
+
+    <!--Quiz Question-->
+    <section class="container mt-5">
+        <h2 class="text-center">Check for learning</h2>
+        <div class="row mt-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 offset 1">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="question">
+                            <h5 class="card-title">What's it called when the data you were trying to access on the internet never reaches your computer?</h5>
+                            <div class="options" data-answer="3">
+                                <label><input type="radio" name="question1" value="1"> Data Shortage</label><br>
+                                <label><input type="radio" name="question1" value="2"> Wi-Fi Down </label><br>
+                                <label><input type="radio" name="question1" value="3"> Packet Loss </label><br>
+                                <label><input type="radio" name="question1" value="4"> No Wi-Fi </label><br>
+    
+                                <!-- Submit Button -->
+                                <div class="submitContainer">
+                                    <button class="submit" >Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Result-->
+                        <div class="result" style="display:none;">
+                            <h5>Your Score:</h5>
+                            <p class="score"></p>
+                            <p class="assessment"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Alert "Course Complete"-->
+        <div class="alert alert-success text-center" role="alert" style="display: none;">
+            Congratulations! You have completed the course.
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light text-center py-3">
+        <p>© 2024 Networking Basics</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="network-basics.js"></script> 
+</body>
+</html>
